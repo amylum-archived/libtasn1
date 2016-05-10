@@ -8,7 +8,7 @@ PATH_FLAGS = --prefix=/usr --infodir=/tmp/trash
 CONF_FLAGS = --with-pic
 CFLAGS =
 
-PACKAGE_VERSION = $$(git --git-dir=upstream/.git describe --tags | sed 's/libtasn1_//')
+PACKAGE_VERSION = $$(git --git-dir=upstream/.git describe --tags | sed 's/libtasn1_//;s/_/./g')
 PATCH_VERSION = $$(cat version)
 VERSION = $(PACKAGE_VERSION)-$(PATCH_VERSION)
 
