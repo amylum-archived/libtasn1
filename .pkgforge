@@ -1,0 +1,22 @@
+name 'libtasn1'
+org 'amylum'
+
+licenses 'COPYING.LIB'
+
+configure_flags(
+  prefix: '/usr',
+)
+
+harden
+
+build do
+  run 'touch ChangeLog'
+  run 'autoreconf -i'
+  configure
+  make
+  install
+end
+
+test do
+  run 'homeof root'
+end

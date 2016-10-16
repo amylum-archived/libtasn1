@@ -1,6 +1,8 @@
 libtasn1
 ==========
 
+[![Build Status](https://img.shields.io/circleci/project/amylum/libtasn1/master.svg)](https://circleci.com/gh/amylum/libtasn1)
+[![GitHub release](https://img.shields.io/github/release/amylum/libtasn1.svg)](https://github.com/amylum/libtasn1/releases)
 [![GPL Licensed](http://img.shields.io/badge/license-GPL-green.svg)](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3))
 
 Package repo for [libtasn1](http://www.gnu.org/software/libtasn1/)
